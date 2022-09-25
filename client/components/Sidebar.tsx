@@ -1,6 +1,5 @@
 import styles from '../styles/sidebar.module.css';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 
 import { RoomAvatar } from './RoomAvatar';
 
@@ -33,7 +32,6 @@ const dummyChannels = [
 ];
 
 export const Sidebar = () => {
-  const router = useRouter();
   const [channels, setChannels] = useState<Array<any>>([]);
 
   useEffect(() => {
