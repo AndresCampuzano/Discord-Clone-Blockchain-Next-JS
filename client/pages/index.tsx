@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import styles from '../styles/Home.module.css';
 import { Sidebar } from '../components/Sidebar';
 import { ConversationList } from '../components/ConversationList';
+import { ChatView } from '../components/ChatView';
 
 const Home: NextPage = () => {
   return (
@@ -9,7 +10,7 @@ const Home: NextPage = () => {
       <Sidebar />
       <div className={styles.main}>
         <ConversationList />
-        ChatView
+        <ChatView />
       </div>
     </div>
   );
